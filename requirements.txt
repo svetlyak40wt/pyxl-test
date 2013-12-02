@@ -1,0 +1,5 @@
+-e git+https://github.com/dropbox/pyxl@c4cfed0e9dd42108b738bf854e8aa094654c31f0#egg=pyxl
+-e git+https://github.com/svetlyak40wt/pip-tools@b62fee0fc03977d0084cfc75708b5e4607f5296d#egg=pip-tools
+PyCrypto==2.6.1
+jinja2==2.7.1
+markupsafe==0.18

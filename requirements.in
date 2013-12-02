@@ -1,0 +1,5 @@
+PyCrypto
+jinja2
+
+-e git+https://github.com/dropbox/pyxl
+-e git+https://github.com/svetlyak40wt/pip-tools@my-future
