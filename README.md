@@ -20,3 +20,10 @@ On my macbook air `pyxl` is faster than `jinja2` by 26%:
 
 Feel free to improve these tests and to add another templating
 engines.
+
+
+Updating requirements.txt
+-------------------------
+
+If you wish to introduce new dependency, then please, add it
+to `requirements.in` file and then run `pip-compile` command.
