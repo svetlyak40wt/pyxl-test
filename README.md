@@ -27,3 +27,17 @@ Updating requirements.txt
 
 If you wish to introduce new dependency, then please, add it
 to `requirements.in` file and then run `pip-compile` command.
+
+Pylinting your templates
+------------------------
+
+Some people are wondering if tools like pylint will treat files
+with embedded html as full of syntax errors. I tested the `test.py`
+with pylint and must admit, there is no problems unless you installed
+pyxl system-wide or run `pylint` like this, to register proper codec
+before pylint started:
+
+    python -c "import pyxl.codec.register, sys; \
+              from pkg_resources import load_entry_point; \
+              sys.exit(load_entry_point('pylint', 'console_scripts', 'pylint')())" \
+           test.py
